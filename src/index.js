@@ -8,9 +8,9 @@ import { App } from './components/app'
 
 const mountNode = document.getElementById('mountNode')
 
-ReactDOM.render(
+ReactDOM.hydrate(
     <>
-        <Provider store={store}>
+        <Provider store={window.__INITIAL_STATE__ || {}}>
             <Global  
                 styles={css`
                         ${globalCSS}               

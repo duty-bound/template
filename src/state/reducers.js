@@ -1,7 +1,7 @@
 import { SET_NAME } from './action-types'
 
 const initialState = {
-    name: 'No name yettt'
+    name: 'Audrey'
 }
 
 export const rootReducer = (state = initialState, action) => {
